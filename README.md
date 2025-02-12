@@ -1,2 +1,2 @@
 # geometry-essay
-Repositorio con todos los materiales sobre el trabajo de Geometría Analítica Espacial de Matemáticas II
+Repositorio con todos los materiales relacionados con el trabajo de Geometría Analítica Espacial de Matemáticas II
