@@ -1,10 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+	--bg-color: #eaeaea;
+	--header-bg-color: #dddddd;
+	--fg-color: #212121;
+	--bruno-accent: #fcfa7b;
+	--jorge-accent: #7b9efc;
+	--rodrigo-accent: #cf7bfc;
+}
+
 body {
-	background: black;
-	color: white;
+	font-family: "Chakra Petch", serif;
+	font-weight: 400;
+
+	background-color: var(--bg-color);
+	color: var(--fg-color);
+}
+
+h1 {
+	font-size: 3em;
+	margin: 0.25em;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	background-color: var(--header-bg-color);
+	padding: 0.75em 0;
+}
+
+header>nav {
+	display: flex;
+	flex-direction: column;
+}
+
+.entry {
+	display: flex;
+	flex-direction: row;
+
+	width: fit-content;
+}
+
+.entry>img {
+	width: 1.25em;
+	margin-right: 0.45em;
+}
+
+.entry>a {
+	font-size: 1.65em;
+}
+
+.entry>a:link,
+.entry>a:visited {
+	text-decoration: none;
+	color: var(--fg-color);
+}
+
+a#bruno-geogebra:hover {
+	color: var(--bruno-accent)
+}
+
+a#jorge-geogebra:hover {
+	color: var(--jorge-accent)
+}
+
+a#rodrigo-geogebra:hover {
+	color: var(--rodrigo-accent)
 }
 
 .geogebra-showcase {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+}
+
+#problem-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	margin: 0 20%;
+}
+
+#problem-body>h2 {
+	margin: 1em 0 0 0;
+}
+
+#problem-body>p {
+	text-align: justify;
 }
