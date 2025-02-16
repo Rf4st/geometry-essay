@@ -4,14 +4,16 @@
 	--bg-color: #eaeaea;
 	--header-bg-color: #dddddd;
 	--fg-color: #212121;
-	--bruno-accent: #fcfa7b;
+	--bruno-accent: #cc9900;
 	--jorge-accent: #7b9efc;
 	--rodrigo-accent: #cf7bfc;
+	--combined-accent: linear-gradient(#cc9900, #7b9efc, #cf7bfc);
 }
 
 body {
 	font-family: "Chakra Petch", serif;
 	font-weight: 400;
+	font-size: 1.25em;
 
 	background-color: var(--bg-color);
 	color: var(--fg-color);
@@ -91,4 +93,31 @@ a#rodrigo-geogebra:hover {
 
 #problem-body>p {
 	text-align: justify;
+}
+
+#total-points,
+#problem-body>ol {
+	margin: 0 0 1em 0;
+}
+
+#start-conditions {
+	margin: 1em 0 0.55em 0;
+}
+
+.b-accent {
+	color: var(--bruno-accent);
+}
+
+.j-accent {
+	color: var(--jorge-accent);
+}
+
+.r-accent {
+	color: var(--rodrigo-accent);
+}
+
+.combo-accent {
+	background-image: linear-gradient(43.31deg, var(--bruno-accent), var(--rodrigo-accent), var(--jorge-accent));
+	color: transparent;
+	background-clip: text;
 }
