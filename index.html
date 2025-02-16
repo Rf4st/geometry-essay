@@ -29,10 +29,41 @@
 	<section id="problem-body">
 		<h2>Enunciado del problema:</h2>
 		<p>
-			Imagina que eres un ingeniero que trabaja a comisión haciendo diseños para PYMEs y autónomos. Tu trabajo es refinar los bocetos que tus clientes envían para crear los planos y esquemas de sus productos ajustando las medidas de los mismos según sus necesidades. Con el creciente uso de la impresión 3D para el prototipado de productos por su bajo coste de producción, has estado recibiendo más encargos de modelo 3D en tus últimos encargos.
-			Hace poco te llegó un encargo de un artesano de dados que buscaba un diseño de un dado D8 (dado de 8 caras) para una primera tirada de dados que quería vender en su nueva página web.
-			Para realizar el encargo vas a trabajar en el espacio para diseñar el dado correctamente. Para ello vas a utilizar la página web geogebra para diseñar el dado correctamente. El artesano te envió que la arista de la base tiene que medir 1,5cm y  la distancia entre los extremos del dado es de 2cm.
+			Imagina que eres un ingeniero que trabaja a comisión haciendo diseños para PYMEs y autónomos. Tu trabajo es refinar los bocetos que tus
+			clientes envían para crear los <strong>planos y esquemas</strong> de sus productos ajustando las <strong>medidas de los mismos</strong> según sus
+			necesidades. Con el creciente uso de la <strong>impresión 3D</strong> para el prototipado de productos (<em>dado su bajo coste de producción</em>),
+			has estado recibiendo más encargos que requieren del modelado 3D para ser completados. 
+			<br>
+			<br>
+			Hace poco te llegó un encargo de un artesano que buscaba un diseño de un <strong>dado D8</strong> (<em>dado de 8 caras, un <strong>octaedro</strong></em>)
+			para una primera tirada de dados exclusivos que quería vender en su nueva página web. En el mundo artesanal de los dados, existe un problema común 
+			entre los autores que están comenzando en el mundillo y quieren sacar a la venta sus propios dados (<em>generalmente hechos con resina</em>): <strong>
+			Obtener un molde de silicona a partir de un dado ya existente sin meterse en problemas legales con la empresa manufacturera</strong>.
+			Es por ello que muchos, y especialmente en los últimos años, han estado creando sus propios diseños en programas de modelado para imprimirlos
+			posteriormente con una impresora 3D, evitando el riesgo de verse involucrado en demandas por uso ilegal de propiedades intelectuales (<em>por la tipografía
+			de números o un logotipo, pues la forma de los dados no es patentable</em>). Por esa razón, encargan a ingenieros como tú este tipo de diseños, para que
+			ellos puedan encargarse la parte más artesanal.
+			<br>
+			<br>
+			Para realizar este encargo trabajarás en el espacio para obtener las dimensiones y coordenadas de los vértices del dado a diseñar. Por la forma geométrica
+			del D8, utilizarás la herramienta <strong>Geogebra</strong> con su <strong>calcualdora 3D</strong> haciendo uso de los conceptos de la <strong><em>Geometría
+			Analítica en el Espacio</em></strong>. A partir de la imagen que te adjuntó el artesano en su correo:
 		</p>
+		<img src="imgs/dicedimensionsschema.png" alt="Dice dimensions">
+		<p id="start-conditions">Considerando el vector \( v=(1.5, 0, 0) \) (<em>Trabajarás en <strong>cm</strong></em>) y el plano \( z=0 \), determina:</p>
+		<ol>
+			<li type="a">Un <strong><span class="b-accent">vector ortogonal</span></strong> a \( v \), contenido en el <strong>plano señalado anteriormente</strong>.
+						 <strong><span class="b-accent">1 PUNTO</span></strong>.</li>
+			<li type="a">Un <strong><span class="j-accent">vector ortogonal a los anteriores</span></strong> de <strong>módulo la altura</strong> de una de las pirámides cuadrangulares que forman 
+						 el dado. <em>Después, con los elemento obtenidos, calcula las <strong>coordenadas de los vértices</strong> que forman dicha pirámide</em>.
+						 <strong><span class="j-accent">2 PUNTOS</span></strong>.</li>
+			<li type="a">Halla el <strong><span class="r-accent">ángulo</span></strong> formado por la arista \( \overline{OV} \), siendo \( V \) el vértice superior de la pirámide anterior,
+						 con el plano \( z=0 \).<br><strong><span class="r-accent">2 PUNTOS</span></strong>.</li>
+			<li type="a">Halla las <strong><span class="j-accent">coordendas del vértice</span></strong>, \( V' \), que le corresponde a la pirámide que conforma la otra mitad del dado.
+						 <strong><span class="j-accent">3 PUNTOS</span></strong>.</li>
+			<li type="a">Calcula el <strong><span class="b-accent">volumen</span></strong> total del dado. <strong><span class="b-accent">3 PUNTOS</span></strong>.</li>
+		</ol>
+		<p id="total-points">TOTAL: <strong><span class="combo-accent">11 PUNTOS</span></strong>.</p>
 	</section>
 	<script src="loader.js"></script>
 </body>
