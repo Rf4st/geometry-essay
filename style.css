@@ -171,6 +171,16 @@ div a {
 
 @media screen and (max-width: 1698px) {
     .ocultar-div{
-        display:none;
+		visibility: hidden;
+		opacity: 0;
+		transition: visibility 0s 0.2s, opacity 0.2s linear;
+    }
+}
+
+@media screen and (min-width: 1698px) {
+    .ocultar-div{
+		visibility: visible;
+  		opacity: 1;
+  		transition: opacity 0.2s linear;
     }
 }
