@@ -110,7 +110,7 @@ hr {
 #index-container>a {
 	width: 100%;
 	text-align: center;
-	margin: 1em 2em;
+	margin: 0.7em 2em;
 	text-decoration: none;
 	color: var(--fg-color);
 }
@@ -184,4 +184,16 @@ hr {
 		opacity: 1;
 		transition: opacity 0.2s linear;
 	}
+}
+
+#problem-resolution a {
+	width: 100%;
+	text-decoration: none;
+	color: var(--fg-color);
+}
+
+#problem-resolution a:hover {
+	background-image: linear-gradient(43.31deg, var(--bruno-accent), var(--rodrigo-accent), var(--jorge-accent));
+	color: transparent;
+	background-clip: text;
 }

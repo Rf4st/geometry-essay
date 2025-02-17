@@ -32,9 +32,13 @@
 			<h2 id="index-title">Índice</h2>
 			<hr>
 			<a href="#problem-body">Enunciado del problema</a>
+			<hr>
 			<a href="#problem-resolution">Resolución del problema:</a>
-			<a href="#problem-resolution-a" style="margin-left: 20px;"><strong>·</strong> Apartado A</a>
-			<a href="#problem-resolution-b" style="margin-left: 20px;"><strong>·</strong> Apartado B</a>
+			<a href="#problem-resolution-a" style="margin-left: 20px;"><strong>></strong> Apartado A</a>
+			<a href="#problem-resolution-b" style="margin-left: 20px;"><strong>></strong> Apartado B</a>
+			<a href="#problem-resolution-c" style="margin-left: 20px;"><strong>></strong> Apartado C</a>
+			<a href="#problem-resolution-d" style="margin-left: 20px;"><strong>></strong> Apartado D</a>
+			<a href="#problem-resolution-e" style="margin-left: 20px;"><strong>></strong> Apartado E</a>
 	</article>
 	</aside>
 	<section id="problem-body">
@@ -57,10 +61,10 @@
 			<br>
 			<br>
 			Para realizar este encargo trabajarás en el espacio para obtener las dimensiones y coordenadas de los vértices del dado a diseñar. Por la forma geométrica
-			del D8, utilizarás la herramienta <strong>Geogebra</strong> con su <strong>calcualdora 3D</strong> haciendo uso de los conceptos de la <strong><em>Geometría
+			del D8, utilizarás la herramienta <strong>Geogebra</strong> con su <strong>calculadora 3D</strong> haciendo uso de los conceptos de la <strong><em>Geometría
 			Analítica en el Espacio</em></strong>. A partir de la imagen que te adjuntó el artesano en su correo:
 		</p>
-		<img src="imgs/dicedimensionsschema.png" alt="Dice dimensions">
+		<img src="imgs/dicedimensionsschema.png" alt="Dice dimensions" style="border-radius: 100px; border: solid;">
 		<p id="start-conditions">Considerando el vector \( v=(1.5, 0, 0) \) (<em>Trabajarás en <strong>cm</strong></em>) y el plano \( z=0 \), determina:</p>
 		<ol>
 			<li type="a">Un <strong><span class="b-accent">vector ortogonal</span></strong> a \( v \), contenido en el <strong>plano señalado anteriormente</strong>.
@@ -80,9 +84,8 @@
 			<hr>
 			<br>
 			<h2>Resolución del problema</h2>
+			<p>	Nos disponemos a resolver el problema propuesto, paso por paso:</p>
 			<p id="problem-resolution-a">
-				Nos disponemos a resolver el problema propuesto, paso por paso:
-				<br>
 				<br>
 				<strong>a) Un <strong><span class="b-accent">vector ortogonal</span></strong> a \( v \), contenido en el <strong>plano señalado anteriormente</strong>.</strong>
 				<p style="margin-left: 50px;">He de caclular un vector ortogonal al vector \( v\), contenido en el plano \( z=0\). Por definición, un vector ortogonal
@@ -92,10 +95,11 @@
 					igual. Consideremos en este caso el vector \(v''\)
 				</p>
 			</p>
-			<div id="id=rgnd7tjh;w=600;h=250;smb=false;br=30px;bc=black;" class="ggb" style="margin-left: 350px;"></div>
+			<div id="id=rgnd7tjh;w=800;h=400;smb=false;br=30px;bc=black;" class="ggb" style="margin-left: 250px;"></div>
 			<br>
 			<br>
 		</p>
+		<hr>
 		<p id="problem-resolution-b">
 			<strong>b) Un <strong><span class="j-accent">vector ortogonal a los anteriores</span></strong> de <strong>módulo la altura</strong> de una de las pirámides cuadrangulares que forman 
 			el dado. <em>Después, con los elemento obtenidos, calcula las <strong>coordenadas de los vértices</strong> que forman dicha pirámide</em>.</strong>
@@ -106,7 +110,7 @@
 				será: \(u\)<strong> = </strong>\(v \times v''\)<strong> = </strong>\((0, 0, 2.25)\)
 				<br>
 				Como el módulo del vector buscado debe coincidir con la altura de una de las pirámides que forman el octaedro, y se deduce
-				por construcción geomeétrica que la altura de una pirámide es la mitad del largo del dado, esto es, 1 cm, entonces el vector
+				por construcción geométrica que la altura de una pirámide es la mitad del largo del dado, esto es, 1 cm, entonces el vector
 				buscado será un vector unitario.
 				<br>
 				Por definición de un vector unitario, se tiene que partiendo de un vector no nulo se puede obtener un vector unitario dividiéndolo
@@ -114,12 +118,82 @@
 				<br>
 				Finalmente, para calcular los vértices que forman la primera pirámide, puesto que los vectores calculados de la base 
 				(\(v\) y \(v''\)) representan la longitud de sus aristas, trasladamos el origen de coordenadas con dichos vectores
-				obteniendo los vértices \(A=(0, 0, 0)\), \(B=(1.5, 0, 0)\), \(C=(0, 1.5, 0)\) y \(D=(1.5, 1.5, 0)\). Por tanto, el vértice
-				superior
+				obteniendo los vértices \(O=(0, 0, 0)\), \(B=(1.5, 0, 0)\), \(C=(0, 1.5, 0)\) y \(D=(1.5, 1.5, 0)\). Por tanto, el vértice
+				superior estará situado en el punto medio de dos vértices opuestos (tomamos \(O=(0, 0, 0)\) y \(D=(1.5, 1.5, 0)\)), y a la
+				altura calculada anteriormente. Por tanto, al trasladar el punto medio \(M_{OD}(0.75, 0.75, 0)\) con el vector \(u'\) se obtiene
+				\(V(0.75, 0.75, 1)\)
 			</p>
+			<br>
+			<div id="id=rqqbkrca;w=800;h=400;smb=false;br=30px;bc=black;" class="ggb" style="margin-left: 250px;"></div>
+			<br>
+			<br>
+			<hr>
+			<p id="problem-resolution-c">
+				<strong>c) Halla el <strong><span class="r-accent">ángulo</span></strong> formado por la arista \( \overline{OV} \), siendo \( V \) el vértice superior de la pirámide anterior,
+				con el plano \( z=0 \).</strong>
+				<p style="margin-left:50px;">He de hallar el ángulo formado por la arista \( \overline{OV} \), siendo \( V \) el vértice superior (calculado en el <a href="#problem-resolution-a">apartado anterior</a>) de la pirámide anterior, con el plano \(z=0\).
+				<br>
+				Por definición, el producto escalar resulta el producto de los módulos por el coseno del ángulo que forman. Entonces, para calcular
+				el ángulo formado por el plano \(z=0\) y la arista \( \overline{OV} \), debemos considerar la arista \( \overline{OV} \) como un vector
+				y tomando un vector director del plano (por ejemplo, tomamos \(d(0.75, 0.75, 0)\)). Finalmente, el ángulo formado por el plano \(z=0\) y la arista \( \overline{OV} \)
+				es dado por \(\alpha=\arcsin\frac{\overline{OV}·d}{|OV|·|d|}\). <br>Calculamos el ángulo:
+				\(\alpha=\arcsin\frac{\overline{OV}·d}{|OV|·|d|}\approx43.31º\)
+				</p>
+			</p>
+			<br>
+			<div id="id=svvzwqwy;w=800;h=400;smb=false;br=30px;bc=black;" class="ggb" style="margin-left: 250px;"></div>
+			<br>
+			<hr>
+			<p id="problem-resolution-d">
+				<strong>d) Halla las <strong><span class="j-accent">coordendas del vértice</span></strong>, \( V' \), que le corresponde a la pirámide que conforma la otra mitad del dado.</strong>
+			</p>
+			<p>He de hallar las coordenadas del vértice \(V'(x,y,z)\) que corresponde al vértice superior de la pirámide que conforma 
+				la otra mitad del dado. Para ello, se debe calcular el punto proyección del vértice V de la primera pirámide sobre el plano
+				que contiene a la base de la misma (\(z=0\)). 
+				<br>
+				En este caso, el punto medio \(M_{OD}(0.75, 0.75, 0)\) calculado en el <a href="#problem-resolution-b"apartado b)></a>
+				coincide con dicho punto. Por tanto, lo que resta es calcular el simétrico de V respecto a \(z=0\), que por definición
+				es el punto que se encuentra a la misma distancia de \(z=0\) que el vértice \(V\). Para ello, impongo \(M_{OD}(0.75, 0.75, 0)\) como
+				punto medio del segmento \( \overline{VV'} \):
+				\((0.75, 0.75, 0)=(\frac{x+0.75}{2},\frac{y+0.75}{2},\frac{z+1}{2})\). Por tanto;
+				<p style="margin-left: 20px;">⮞ \(\frac{x+0.75}{2}=0.75\); \(x=2*0.75-0.75=0.75\); \(x=0.75\)</p>
+				<p style="margin-left: 20px;">⮞ \(\frac{y+0.75}{2}=0.75\); \(y=2*0.75-0.75=0.75\); \(y=0.75\)</p>
+				<p style="margin-left: 20px;">⮞ \(\frac{z+1}{2}=0\); \(z=-1\)</p>
+			</p>
+			<br>
+			<div id="id=rgnd7tjh;w=800;h=400;smb=false;br=30px;bc=black;" class="ggb" style="margin-left: 250px;"></div>
+			<br>
+			<hr>
+			<p id="problem-resolution-e">
+				<strong>e) Calcula el <strong><span class="b-accent">volumen</span></strong> total del dado. </strong>
+				<p>He de calcular el volumen total del dado. Para ello, habré de hallar el volumen de una de las pirámides cuadrangulares
+					que conforman el dado. Su volumen será el doble del valor obtenido al estar formado por dos pirámides iguales.
+					<br>
+					La fórmula para hallar el volumen de una pirámide cuadrangular se deduce de la fórmula para calcular el volumen de un
+					tetraedro. Considerando los vectores de la base \(v\) y \(v''\) y el vector \(u'\), se tiene que el volumen del tetraedro
+					que conforman se rige por \(V=⅙|[v, v'', u']|\). Por construcción geométrica, podemos pensar en una pirámide cuadrangular como
+					la unión de dos tetraedros que comparten tres de sus vértices.
+					<br>
+					<div id="id=bmuxdegb;w=800;h=400;smb=false;br=30px;bc=black;" class="ggb" style="margin-left: 250px;"></div>
+					<br>
+					<br>
+					De esa manera se deduce que el volumen de la pirámide cuadrangular será el doble del volumen del tetraedro,
+					esto es: \(⅙|[v, v'', u']|\) <br> Entonces, el volumen de una de las pirámides será:
+					<br>
+					<p style="margin-left: 20px;">\(V=\frac{1}{3}\begin{vmatrix} 1.5 & 0 & 0 \\ 0 & 1.5 & 0 \\ 0 & 0 & 1 \end{vmatrix}=0.75\).
+						</p>
+						<br>Finalmente, podemos concluir que el volumen total del dado será: <br><br> \(V= 2 * 0.75 = 1.5\) 
+						<br>
+						<div id="id=v3kgxgca;w=800;h=400;smb=false;br=30px;bc=black;" class="ggb" style="margin-left: 250px;"></div>
+				</p>
+				
+			</p>
+			<br>
+			<br>
 			<br>
 		</section>
 	</section>
+
 	<script src="loader.js"></script>
 </body>
 </html>
