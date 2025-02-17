@@ -56,10 +56,6 @@ header>nav {
 
 .entry>a {
 	font-size: 1.65em;
-}
-
-.entry>a:link,
-.entry>a:visited {
 	text-decoration: none;
 	color: var(--fg-color);
 }
@@ -116,9 +112,6 @@ hr {
 	text-align: center;
 	margin: 1em 2em;
 	text-decoration: none;
-}
-
-#index-container>a:visited {
 	color: var(--fg-color);
 }
 
