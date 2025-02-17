@@ -88,7 +88,6 @@ window.addEventListener("load", () => {
 	const ggbEmbeds = document.querySelectorAll("div.ggb");
 	for (const embed of ggbEmbeds) {
 		const params = parseGGBInfo(embed.id);
-		console.log(params);
 		const applet = new GGBApplet(params, true);
 		applet.inject(embed.id);
 	}
