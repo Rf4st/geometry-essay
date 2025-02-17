@@ -3,6 +3,7 @@
 :root {
 	--bg-color: #eaeaea;
 	--header-bg-color: #dddddd;
+	--index-entry-hovered: #c9c9c9;
 	--fg-color: #212121;
 	--bruno-accent: #cc9900;
 	--jorge-accent: #7b9efc;
@@ -33,7 +34,7 @@ header {
 
 	background-color: var(--header-bg-color);
 	padding: 0.75em 0;
-	border-radius: 30px;
+	border-radius: 1em;
 }
 
 header>nav {
@@ -81,12 +82,64 @@ a#rodrigo-geogebra:hover {
 	justify-content: center;
 }
 
+#index-container {
+	display: flex;
+	position: absolute;
+	flex-direction: column;
+	align-items: center;
+
+	background-color: var(--header-bg-color);
+	border-radius: 0.75em;
+	margin-top: 0.5em;
+}
+
+#index-container>h2 {
+	width: 100%;
+	margin: 0;
+	padding: 1em 2em;
+
+	text-align: center;
+
+	background-image: linear-gradient(43.31deg, var(--bruno-accent), var(--rodrigo-accent), var(--jorge-accent));
+	color: transparent;
+	background-clip: text;
+}
+
+hr {
+	width: 100%;
+	margin: 0;
+	opacity: 50%;
+}
+
+#index-container>a {
+	width: 100%;
+	text-align: center;
+	margin: 1em 2em;
+	text-decoration: none;
+}
+
+#index-container>a:visited {
+	color: var(--fg-color);
+}
+
+#index-container>a:hover {
+	background-image: linear-gradient(43.31deg, var(--bruno-accent), var(--rodrigo-accent), var(--jorge-accent));
+	color: transparent;
+	background-clip: text;
+}
+
 #problem-body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 
-	margin: 0 20%;
+	margin: 0 17vw;
+}
+
+#problem-resolution {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 #problem-body>h2 {
@@ -124,63 +177,18 @@ a#rodrigo-geogebra:hover {
 	background-clip: text;
 }
 
-div {
-	background-color: #dddddd;
-	position: absolute;
-	height: max-content;
-	width: 300px;
-	border-radius: 15px;
-	margin-top: 30px;
-	margin-left: 35px;
-}
-
-div p {
-	margin-left: 15px;
-}
-
-div a {
-	text-decoration: none;
-	color: #000000;
-}
-
-#problem-body {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-
-	margin: 0 20%;
-}
-
-#problem-resolution {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-
-	margin: 0 20%;
-}
-
-.tituloindice {
-	font-size: 1.6em;
-	margin-left: 3.2em;
-	margin-bottom: 0.6em;
-	margin-top: 0.6em;
-	background-image: linear-gradient(43.31deg, var(--bruno-accent), var(--rodrigo-accent), var(--jorge-accent));
-	color: transparent;
-	background-clip: text;
-}
-
 @media screen and (max-width: 1698px) {
-    .ocultar-div{
-		visibility: hidden;
+	#index-container {
+		display: none;
 		opacity: 0;
 		transition: visibility 0s 0.2s, opacity 0.2s linear;
-    }
+	}
 }
 
 @media screen and (min-width: 1698px) {
-    .ocultar-div{
+	#index-container {
 		visibility: visible;
-  		opacity: 1;
-  		transition: opacity 0.2s linear;
-    }
+		opacity: 1;
+		transition: opacity 0.2s linear;
+	}
 }
